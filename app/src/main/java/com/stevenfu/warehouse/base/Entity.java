@@ -32,7 +32,13 @@ public class Entity {
                     }else if (field.getType().getName().toLowerCase().contains("boolean")){
                         value = obj.optBoolean(name);
                     }else if (field.getType().getName().toLowerCase().contains("double")){
-                        value = obj.optDouble(name);
+                        double doubleValue = obj.optDouble(name);
+                        if (Double.isNaN(doubleValue)){
+                            value = 0;
+                        }else{
+                            value = doubleValue;
+                        }
+                        //value = obj.optDouble(name);
                     }else{
                         value = obj.opt(name);
                     }

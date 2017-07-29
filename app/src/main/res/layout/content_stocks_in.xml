@@ -29,6 +29,7 @@
                 android:id="@+id/edtInvoiceNo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:textSize="12dp"
                 android:inputType="text" />
             <TextView
                 android:layout_width="wrap_content"
@@ -101,7 +102,8 @@
         android:background="@drawable/linearlayout_background"
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/tablerow_height">
+        android:padding="5dp"
+        android:layout_height="30dp">
         <TextView
             android:text="商品"
             android:layout_weight="1"
@@ -135,6 +137,7 @@
         <TextView
             android:text="操作"
             android:layout_weight="1"
+            android:textAlignment="textEnd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
     </LinearLayout>
@@ -142,7 +145,7 @@
         android:id="@+id/listDetails"
 
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="132dp"
         android:background="@drawable/listview_backgroud">
 
     </ListView>
@@ -151,6 +154,7 @@
         android:layout_height="wrap_content">
         <TableRow
             android:layout_height="@dimen/tablerow_height"
+            android:padding="5dp"
             android:background="@drawable/linearlayout_background">
             <TextView
                 android:text="合计金额"
@@ -160,6 +164,7 @@
                 android:id="@+id/edtTotalPrice"
                 android:inputType="numberDecimal"
                 android:ems="10"
+                android:textAlignment="textEnd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -169,6 +174,7 @@
         </TableRow>
         <TableRow
             android:layout_height="@dimen/tablerow_height"
+            android:padding="5dp"
             android:background="@drawable/linearlayout_background">
             <TextView
                 android:text="合计数量"
@@ -178,6 +184,7 @@
                 android:id="@+id/edtTotalNo"
                 android:inputType="numberDecimal"
                 android:ems="10"
+                android:textAlignment="textEnd"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
             <TextView
@@ -187,6 +194,7 @@
         </TableRow>
         <TableRow
             android:layout_height="@dimen/tablerow_height"
+            android:padding="5dp"
             android:background="@drawable/linearlayout_background">
             <TextView
                 android:text="备注"

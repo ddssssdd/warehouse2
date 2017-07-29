@@ -310,8 +310,7 @@ public class StocksOutActivity extends BaseActivity implements StocksOutFragment
             map.put(String.format("details[%d][Price]",i),String.format("%1.2f",d.Price));
             map.put(String.format("details[%d][Quantity]",i),String.format("%1.2f",d.Quantity));
             map.put(String.format("details[%d][Memo]",i), d.Memo);
-
-
+            map.put(String.format("details[%d][Id]",i), "0");
         }
 
         String url = Url.SERVER_URL+ Url.STOCKS_OUT;

@@ -368,6 +368,7 @@ public class StocksInActivity extends BaseActivity implements StocksInFragment.O
             map.put(String.format("details[%d][Quantity]",i),String.format("%1.2f",d.Quantity));
             map.put(String.format("details[%d][Memo]",i), d.Memo);
             map.put(String.format("details[%d][Specification]",i), d.Specification);
+            map.put(String.format("details[%d][Id]",i), "0");
 
         }
 
