@@ -118,7 +118,8 @@ public class StoreProductsActivity extends BaseActivity {
         Intent intent = new Intent(this, StocksDetailActivity.class);
         intent.putExtra("store_id",store_id);
         intent.putExtra("product_id",store.ProductId);
-        intent.putExtra("inventory_id",store.Id);
+        //intent.putExtra("inventory_id",store.Id);
+        intent.putExtra("inventory_id",store.InventoryId);
         startActivity(intent);
     }
 

@@ -26,4 +26,5 @@ public class Inventory extends Entity{
     public int UserId;
     public String Name;
     public String Specification;
+    public int InventoryId;
 }
